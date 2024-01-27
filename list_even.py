@@ -1,4 +1,7 @@
-a=list(map(int, input("Enter the elements in the list : ").split()))
-print("Original list is : ",a)
-b=[i for i in a if i%2!=0]
-print("Final list : ",b)
+list = [1,2,4,5,6,3,7,8,9]
+fin_lis = []
+
+for i in list:
+    if(i%2 != 0):
+        fin_lis.append(i)
+print(fin_lis)
