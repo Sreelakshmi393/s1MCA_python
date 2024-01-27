@@ -1,14 +1,11 @@
-a=int (input("enter side of sq :"))
-x=lambda a:a*a
-print(x(a))
+a = int(input("Enter side of sqaure : "))
+sq = lambda a : a*a
+print(sq(a))
 
-l=int (input("enter length of rect :"))	
-b=int (input("enter breadth of rect :"))
-x=lambda l,b:l*b
-print(x(l,b))
+l,b = map(int, input("Enter length and breadth : ").split())
+rec = lambda l,b : a*(l+b)
+print(rec(l,b))
 
-h=int (input("enter height of triangle :"))
-b=int (input("enter base of triangle :"))
-x=lambda h,b:0.5*h*b
-print(x(h,b))
-
+b,h = map(int, input("Enter breadth and height : ").split())
+tri = lambda b,h : 0.5*b*h
+print(tri(b,h))
